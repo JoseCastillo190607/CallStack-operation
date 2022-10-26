@@ -9,3 +9,13 @@ Nota
 
 
 🗒🗒🗒🗒🗒-------
+
+
+GB
+
+What is a CallStack?
+It is an execution stack and this means that in javascript you can only execute things one at a time.
+Where the running processes are stacked one on top of the other, the stack is defined as Last in First Out, this means that the last one to enter is the first to leave, to give a more real or everyday example, this is how it would be done normally with a stack of dishes where when placed one on top of the other the last dish will be the first to be washed and will come out of the stack
+JavaScript engines work like the stack of dishes, the JavaScript engine in the first instance goes through all the code where the first thing it does is read our code and for each function call it will create a record of all existing functions and it is going to add it to the stack, the register contains the necessary information so that the engine can execute this function for the call of another function it does the same it creates another register with the information of the new function and adds it to the stack and with it the record at the top of the stack will match the . Function that motor is executing.
+Note
+It cannot work with several functions, when the engine finishes with the record at the top of the stack that it was executing, it will remove it from the stack and continue with the record that is below it and the function that is associated with it.
