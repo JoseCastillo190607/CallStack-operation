@@ -1,0 +1,11 @@
+-------🗒🗒🗒🗒🗒
+
+¿Qué es una CallStack?
+	Es una pila de ejecución y esta hace que en javascript solo se puedan ejecutar cosas de por una a la vez.
+	En donde los procesos en ejecución se van apilando uno encima del otro, la pila se define como Last in First Out, esto quiere decir que el ultima en entrar es el primero en salir, para dar un ejemplo más real o cotidiano es como se haría normalmente con una pila de platos donde al colocarlos unos encima del otro el ultimo plato será el primero en ser lavado y saldrá de la pila 
+	Los motores de JavaScript funcionan como la pila de platos, el motor de JavaScript en primera instancia pasa por todo el código donde lo primero que hace es leer nuestro código y por cada llamado a una función va a crear un registro de todas las funciones existentes y lo va a agregar a la pila, el registro contiene la información necesaria para  que el motor pueda ejecutar esta función para el llamado de otra función hace lo mismo crea otro registro con la información de la nueva función y la agrega a la pila y con ello el registro que queda hasta arriba de la pila coincidirá con la. Función que motor está ejecutando.
+Nota
+	No puede trabajar con varias funciones, cuando el motor termine con el registro de hasta arriba de la pila que estaba ejecutando, lo sacara de la pila y seguirá con el registro que quedo debajo y la función que este tenga asociada.
+
+
+🗒🗒🗒🗒🗒-------
